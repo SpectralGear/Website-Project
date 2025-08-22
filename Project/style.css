@@ -1,9 +1,63 @@
-body {
-    background-color:aliceblue;
+:root {
+  --header-height: 10vh;
+  --default-color: rgb(48, 207, 255);
+  --default-color-darker: rgb(21, 142, 179);
+  --default-bg-color: rgb(255, 240, 240);
+}
+html { scroll-behavior: smooth;}
+html, body { overflow-x: clip; }
+body, header, footer {
+    background-color: var(--default-bg-color);
+}
+header, footer{
+    width: 100vw;
+    left: 0;
 }
 header {
-    background-color:black;
+    position: fixed;
+    top: 0;
+    height: var(--header-height);
+    border-bottom: 1vh solid var(--default-color);
+    z-index: 1;
 }
-.download_button {
-    max-width: 50 px;
+main {
+    padding-top: var(--header-height);
+    height: 200vh;
+}
+footer {
+    position: static;
+    bottom: 0;
+    border-top: 1vh solid var(--default-color);
+}
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.downloadButton {
+    width: 50vw;
+    display: block;
+    margin: auto;
+}
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    width: 95vw;
+    margin: auto;
+}
+.navBar>nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navBar>nav>a>img {
+    height: 7vh;
+    width: 7vh;
+    margin-right: 50vw;
+}
+.navBar>nav>a>* {
+    color: var(--default-color);
+}
+.navBar>nav>a>*:hover {
+    color: var(--default-color-darker);
 }

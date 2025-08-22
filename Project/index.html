@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="none">
     <title>Document</title>
-    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="topOfPage">
     <header>
-        <div class="logo"></div>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
+        <div class="navBar">
+            <nav><a href="#topOfPage"><img src="placeholder" alt="logo"></a></nav>
+            <nav><a href="#topOfPage"><h2>Home</h2></a></nav>
+            <nav><a href="#aboutSection"><h2>About</h2></a></nav>
+            <nav><a href="#cvSection"><h2>CV</h2></a></nav>
+            <nav><a href="#portfolioSection"><h2>Portfolio</h2></a></nav>
+            <nav><a href="#contactSection"><h2>Contact</h2></a></nav>
+        </div>
     </header>
     <main>
-        <article class="text">
+        <article>
             <h1></h1>
             <p></p>
         </article>
-        <img class="download_button" src="images/Link Button.svg" alt="">
+        <a href="downloadables/TestFile.txt" download="filename"><img class="downloadButton" src="images/Link Button.svg" alt="download button"></a>
     </main>
-    <footer>
-        <div class="container">
-            <p class="footerP"></p>
-            <nav></nav>
+    <footer id="contactSection">
+        <div >
+            <nav><p>contact</p></nav>
         </div>
     </footer>
 </body>
