@@ -1,8 +1,8 @@
 :root {
-  --header-height: 10vh;
+  --header-height: 8vh;
   --default-color: rgb(48, 207, 255);
   --default-color-darker: rgb(21, 142, 179);
-  --default-bg-color: rgb(255, 240, 240);
+  --default-bg-color: rgb(240, 248, 255);
 }
 html { scroll-behavior: smooth;}
 html, body { overflow-x: clip; }
@@ -51,13 +51,30 @@ a, a:visited, a:hover, a:active {
     margin-right: auto;
 }
 .navBar>nav>a>img {
-    height: 7vh;
-    width: 7vh;
+    height: 8vh;
+    width: 8vh;
     margin-right: 50vw;
 }
 .navBar>nav>a>* {
     color: var(--default-color);
+    font-size: 3vh;
 }
 .navBar>nav>a>*:hover {
     color: var(--default-color-darker);
+}
+.downloadButton{
+    display: block;
+    background-image: linear-gradient(to bottom right, var(--default-color),  var(--default-color), var(--default-color-darker));
+    color: var(--default-bg-color);
+    padding: 1vh 10vw;
+    border-radius: 2vh;
+    margin: auto;
+}
+.downloadButton>*{
+    justify-self: center;
+    font-size: 4vh;
+}
+.downloadButton:hover{
+    background-image: linear-gradient(to bottom right, var(--default-color), var(--default-color-darker));
+    color: var(--default-bg-color);
 }
