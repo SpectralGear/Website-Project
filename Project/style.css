@@ -4,8 +4,10 @@
   --default-color-darker: rgb(21, 142, 179);
   --default-bg-color: rgb(240, 248, 255);
 }
-html { scroll-behavior: smooth;}
-html, body { overflow-x: clip; }
+html { 
+    scroll-behavior: smooth; 
+    overflow-x: clip;
+}
 body, header, footer {
     background-color: var(--default-bg-color);
 }
@@ -50,9 +52,8 @@ a, a:visited, a:hover, a:active {
     margin-left: auto;
     margin-right: auto;
 }
-.navBar>nav>a>img {
-    height: 8vh;
-    width: 8vh;
+.navBar>nav>a>svg {
+    height: 7vh;
     margin-right: 50vw;
 }
 .navBar>nav>a>* {
